@@ -1,13 +1,14 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .content {
@@ -16,13 +17,15 @@ body {
 
 .video-collage {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* чтобы на маленьких экранах видео переходили на новую строку */
 }
 
 .video-collage video {
     width: 300px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
